@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.container {
+    display: flex;
+    position: flex;
+    /* border: 5px solid green; */
+}
+
+img {
+    height: 100vh;
+}
+
+.box1 {
+    position: fixed;
+    height: calc((100vh));
+    width: calc((100vh) * 0.75 * 0.02);
+    background-color: rgb(1, 78, 108);
+    left: calc((100vh) * 0.75 * 0.92);
+}
+
+#my_length {
+    height: 400vh;
+}
+
+
+button.rotate_text {
+    height: calc(((100vh) * 0.75 * 0.06));
+    width: 16.6666vh;
+    /* right: calc(75vh - ((100vh) * 0.75 * 0.92)); */
+    /* top: calc(100vh * 1 / 12 + -22.5px); */
+    background-color: rgb(250, 201, 13);
+    color: rgb(1, 78, 108);
+    border-radius: 20px 20px 0px 0px;
+    transform: translateX(calc(-4.5vh)) translateY(calc(-50% + 8.3333vh)) rotate(90deg);
+    /* position: relative; */
+    position: fixed;
+    font-family: 'Roboto', sans-serif, arial;
+    font-weight: 400;
+    font-size: 1.8vh;
+    letter-spacing: 1px;
+}
+
+.rotate_text p {
+/*    margin-top: 1.8vh;*/
+}
+
+.btn_active p {
+    margin-top: 1.8vh;
+}
+
+#btn6 p {
+    margin-top: 1vh;
+    font-size: 1.2vh;
+}
+
+#btn2 p {
+    font-size: 1.6vh;
+}
+
+button div {
+    flex-flow: nowrap;
+}
+
+.MOA {
+    position: fixed;
+    top: calc(100vh * 0 / 6);
+}
+
+.study_design {
+    position: fixed;
+    top: calc(100vh * 1 / 6);
+}
+
+.efficacy {
+    position: fixed;
+    top: calc(100vh * 2 / 6);
+}
+
+.safety {
+    position: fixed;
+    top: calc(100vh * 3 / 6);
+}
+
+.dosing {
+    position: fixed;
+    top: calc(100vh * 4 / 6);
+}
+
+.information {
+    position: fixed;
+    top: calc(100vh * 5 / 6);
+}
+
+#active_box {
+
+    margin-left: 0px;
+    /* font-size: 1em; */
+}
+
+#active_box div {
+    padding: 3px;
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+.span {
+    transform: translateY(0%);
+    position: relative;
+    border: 1px solid black;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+    opacity: 0.4;
+}
+
+/* .box2.rotate_text  */
+.btn_active {
+    height: calc(((100vh) * 0.75 * 0.06));
+    width: 16.6666vh;
+
+    background-color: rgb(1, 78, 108);
+    color: rgb(250, 201, 13);
+    border-radius: 20px 20px 0px 0px;
+    transform: translateX(calc(-4.5vh)) translateY(calc(-50% + 8.3333vh)) rotate(90deg);
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.8vh;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.span-show {
+    width: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: -69.5vh;
+    transform: rotate(0deg);
+}
+
+#btn1 .span-show {
+    left: calc(100vh * 3 / 6 - 100px);
+}
+
+#btn2 .span-show {
+    left: calc(100vh * 2 / 6 - 100px);
+}
+
+#btn3 .span-show {
+    left: calc(100vh * 1 / 6 - 100px);
+}
+
+#btn4 .span-show {
+    left: calc(100vh * 0 / 6 - 100px);
+}
+
+#btn5 .span-show {
+    left: calc(100vh * -1 / 6 - 100px);
+}
+
+#btn6 .span-show {
+    left: calc(100vh * -2 / 6 - 100px);
+}
+
+.span-none {
+    display: none;
+    justify-content: center;
+    left: 20px;
+    transform: rotate(0deg);
+}
+
+span.active {
+    background-color: rgb(1, 78, 108);
+    opacity: 0.5;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width:450px) {
+    #content {
+        width: 92vw;
+        height: calc(100vw * 4 / 3);
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    #imgs img {
+        width: 92vw;
+        height: calc(100vw * 4 / 3);
+    }
+
+    button.rotate_text,
+    .btn_active {
+        height: calc(8vw);
+        transform: translateX(calc(-10vw)) translateY(calc(-50% + 8.3333vh)) rotate(90deg);
+    }
+
+
+}
+
+/* landscape */
+@media (orientation:landscape) {
+    .container {
+        transform: rotate(-90deg) translateX(-100vh) scale(1.3333);
+        /* transform: translateY(47%) rotate(90deg) scale(1.3333) */
+        overflow: hidden;
+    }
+}
