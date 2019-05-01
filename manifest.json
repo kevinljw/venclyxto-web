@@ -1,6 +1,7 @@
 {
   "name": "Donate App",
   "description": "This app helps you donate to worthy causes.",
+  "display":"fullscreen",
   "icons": [{
     "src": "images/icon.png",
     "sizes": "192x192"
