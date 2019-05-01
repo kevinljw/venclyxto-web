@@ -217,10 +217,11 @@ html {
 }
 
 /* landscape */
+/*
 @media (orientation:landscape) {
     .container {
         transform: rotate(-90deg) translateX(-100vh) scale(1.3333);
-        /* transform: translateY(47%) rotate(90deg) scale(1.3333) */
         overflow: hidden;
     }
 }
+*/
