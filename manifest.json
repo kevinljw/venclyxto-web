@@ -1,6 +1,6 @@
 {
-  "name": "Donate App",
-  "description": "This app helps you donate to worthy causes.",
+  "name": "Venclyxto App",
+  "description": "This is Venclyxto App.",
   "display":"fullscreen",
   "start_url": "/index.html",
   "orientation": "landscape",
