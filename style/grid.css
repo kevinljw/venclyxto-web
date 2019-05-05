@@ -6,12 +6,11 @@ html,
 body {
     margin: 0;
     padding: 0;
-    /* background: #000; */
+    background: #000; 
 }
 
 .container {
     display: flex;
-    position: flex;
     /* border: 5px solid green; */
 }
 
@@ -274,8 +273,9 @@ html {
         transform: rotate(90deg) scale(calc(4/3)) translate(0px, -100%) ;
         transform-origin: 0px 0px;*/ 
     .container {
-        transform: rotate(-90deg) translateX(53vh) scale(1.3333);
-
+        transition: 3s;
+        transform: rotate(-90deg) translate(-75%, 0vh) scale(calc(4/3)) ;
+        transform-origin: 0px 0px;
         overflow: hidden;
     }
 }

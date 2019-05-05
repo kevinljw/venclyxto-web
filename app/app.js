@@ -278,22 +278,22 @@ $(window).resize(function () {
 // //        document.getElementById('orient').className = '';
 
 
-window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
-    if (window.orientation === 180 || window.orientation === 0) {
-        parent.location.reload();
-        // console.log("V")
-        // currentImg *= 1.3333;
-        // currentImg = Math.max(currentImg, 0);
-        // scrollImages(height * currentImg, speed);
-    }
-    if (window.orientation === 90 || window.orientation === -90) {
-        parent.location.reload();
-        // console.log("H")
-        // currentImg *= 0.75;
-        // currentImg = Math.max(currentImg, 0);
-        // scrollImages(height * currentImg, speed);
-    }
-}, true);
+//window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
+//    if (window.orientation === 180 || window.orientation === 0) {
+////        parent.location.reload();
+//        // console.log("V")
+//        // currentImg *= 1.3333;
+//        // currentImg = Math.max(currentImg, 0);
+//        // scrollImages(height * currentImg, speed);
+//    }
+//    if (window.orientation === 90 || window.orientation === -90) {
+////        parent.location.reload();
+//        // console.log("H")
+//        // currentImg *= 0.75;
+//        // currentImg = Math.max(currentImg, 0);
+//        // scrollImages(height * currentImg, speed);
+//    }
+//}, true);
 
 //window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
 //    if (window.orientation === 180 || window.orientation === 0) {
