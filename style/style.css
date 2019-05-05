@@ -5,7 +5,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #imgs {

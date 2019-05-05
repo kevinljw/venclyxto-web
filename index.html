@@ -3,25 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="fullscreen, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <title>Venclyxto</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="app/jquery.min.js"></script>
     <script src="app/jquery.touchSwipe.min.js"></script>
-    <script src="app/app.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div id="content">
             <div id="imgs">
-                <img src="./JPG/page-0.jpg" />
+                <img src="./JPG/page-0.jpg" id="my_img01" />
                 <img src="./JPG/page-2.jpg" />
                 <img src="./JPG/page-3.jpg" />
                 <img src="./JPG/page-4.jpg" />
@@ -111,6 +107,17 @@
             </div>
         </div>
     </div>
+
+    <script src="app/app.js"></script>
+
+    <!-- <script type="text/javascript">
+        var img = document.getElementById('imgs');
+        var img2 = document.getElementById('my_img01');
+        var height = img.clientHeight;
+        var height2 = img2.clientHeight;
+        console.log(height / 19)
+        console.log(height2)
+    </script> -->
 </body>
 
 </html>
