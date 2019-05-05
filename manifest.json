@@ -5,7 +5,7 @@
   "start_url": "/index.html",
   "orientation": "portrait",
   "icons": [{
-    "src": "images/icon.png",
-    "sizes": "192x192"
+    "src": "images/contact-book.png",
+    "sizes": "128x128"
   }]
 }
