@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-var window_height = $(window).height()
-// var window_height = $(window).width() * 4 / 3;
-
-//console.log($(window).height(), window_height);
-
-var IMG_HEIGHT = window_height;
-=======
 var img = document.getElementById('imgs');
 var height = img.clientHeight / 19;
 var img2 = document.getElementById('my_img01');
@@ -18,7 +10,6 @@ var window_height = $(window).height();
 
 var IMG_HEIGHT = height;
 // console.log(IMG_HEIGHT)
->>>>>>> bb4b5e1418f27ba3151a0cd721f066585e2331b4
 // var IMG_HEIGHT = document.getElementsByClassName("img").clientHeight;
 var currentImg = 0;
 var maxImages = 19;
@@ -274,18 +265,18 @@ $(window).resize(function () {
 });
 
 // detectmob();
-<<<<<<< HEAD
-window.addEventListener('orientationchange', function () {
-    if (window.orientation == -90) {
-        window.scrollTo(100)
-//        document.getElementById('orient').className = 'orientright';
-    }
-    if (window.orientation == 90) {
-//        document.getElementById('orient').className = 'orientleft';
-    }
-    if (window.orientation == 0) {
-//        document.getElementById('orient').className = '';
-=======
+
+// window.addEventListener('orientationchange', function () {
+//     if (window.orientation == -90) {
+//         window.scrollTo(100)
+// //        document.getElementById('orient').className = 'orientright';
+//     }
+//     if (window.orientation == 90) {
+// //        document.getElementById('orient').className = 'orientleft';
+//     }
+//     if (window.orientation == 0) {
+// //        document.getElementById('orient').className = '';
+
 
 window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
     if (window.orientation === 180 || window.orientation === 0) {
@@ -301,7 +292,6 @@ window.addEventListener("onorientationchange" in window ? "orientationchange" : 
         // currentImg *= 0.75;
         // currentImg = Math.max(currentImg, 0);
         // scrollImages(height * currentImg, speed);
->>>>>>> bb4b5e1418f27ba3151a0cd721f066585e2331b4
     }
 }, true);
 

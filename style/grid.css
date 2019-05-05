@@ -47,15 +47,10 @@ button.rotate_text {
     line-height: 8px;
 }
 
-<<<<<<< HEAD
-.rotate_text p {
-/*    margin-top: 1.8vh;*/
-}
-=======
+
 /* .rotate_text p {
     margin-top: 1.8vh;
 } */
->>>>>>> bb4b5e1418f27ba3151a0cd721f066585e2331b4
 
 /* .btn_active p {
     margin-top: 1.8vh;
@@ -274,14 +269,13 @@ html {
 /* landscape */
 
 @media (orientation:landscape) {
-<<<<<<< HEAD
-    .container{
+
+    /*.container{
         transform: rotate(90deg) scale(calc(4/3)) translate(0px, -100%) ;
-        transform-origin: 0px 0px; 
-=======
+        transform-origin: 0px 0px;*/ 
     .container {
         transform: rotate(-90deg) translateX(53vh) scale(1.3333);
->>>>>>> bb4b5e1418f27ba3151a0cd721f066585e2331b4
+
         overflow: hidden;
     }
 }
