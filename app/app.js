@@ -1,15 +1,28 @@
+<<<<<<< HEAD
 var window_height = $(window).height()
 // var window_height = $(window).width() * 4 / 3;
 
 //console.log($(window).height(), window_height);
 
 var IMG_HEIGHT = window_height;
+=======
+var img = document.getElementById('imgs');
+var height = img.clientHeight / 19;
+var img2 = document.getElementById('my_img01');
+var height2 = img2.clientHeight;
+// console.log(height)
+// console.log(height2)
+
+var window_height = $(window).height();
+// console.log($(window).height(), window_height);
+
+var IMG_HEIGHT = height;
+// console.log(IMG_HEIGHT)
+>>>>>>> bb4b5e1418f27ba3151a0cd721f066585e2331b4
 // var IMG_HEIGHT = document.getElementsByClassName("img").clientHeight;
 var currentImg = 0;
 var maxImages = 19;
 var speed = 500;
-
-var imgs;
 
 var swipeOptions = {
     triggerOnTouchEnd: true,
@@ -26,7 +39,7 @@ $(function () {
 
 
 $(window).resize(function () {
-    IMG_HEIGHT = $(window).height();
+    IMG_HEIGHT = height;
     // console.log(IMG_HEIGHT);
     scrollImages(IMG_HEIGHT * currentImg, speed);
 });
@@ -247,11 +260,11 @@ $(function () {
     });
 });
 
-$(window).resize(function detectmob() {
+$(window).resize(function () {
     if (navigator.userAgent.match(/Android/i) ||
         navigator.userAgent.match(/iPad/i) ||
         navigator.userAgent.match(/iPod/i)) {
-        window_height = $(window).width() * 1.2266;
+        // window_height = $(window).width() * 1.2266;
         // document.location.href = "mobile/index_mobile.html";
     } else {
 
@@ -261,18 +274,48 @@ $(window).resize(function detectmob() {
 });
 
 // detectmob();
+<<<<<<< HEAD
+window.addEventListener('orientationchange', function () {
+    if (window.orientation == -90) {
+        window.scrollTo(100)
+//        document.getElementById('orient').className = 'orientright';
+    }
+    if (window.orientation == 90) {
+//        document.getElementById('orient').className = 'orientleft';
+    }
+    if (window.orientation == 0) {
+//        document.getElementById('orient').className = '';
+=======
 
 window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
     if (window.orientation === 180 || window.orientation === 0) {
-        // window.location.reload();
-        scrollImages(IMG_HEIGHT * currentImg, speed);
+        parent.location.reload();
+        // console.log("V")
+        // currentImg *= 1.3333;
+        // currentImg = Math.max(currentImg, 0);
+        // scrollImages(height * currentImg, speed);
     }
     if (window.orientation === 90 || window.orientation === -90) {
-        // $('html,body').scrollTop(3000);
-        scrollImages(IMG_HEIGHT * currentImg, speed);
-        $('html').animate({
-            scrollTop: 3000
-        }, 'slow')
-        // window.location.reload();
+        parent.location.reload();
+        // console.log("H")
+        // currentImg *= 0.75;
+        // currentImg = Math.max(currentImg, 0);
+        // scrollImages(height * currentImg, speed);
+>>>>>>> bb4b5e1418f27ba3151a0cd721f066585e2331b4
     }
-}, false);
+}, true);
+
+//window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
+//    if (window.orientation === 180 || window.orientation === 0) {
+//        // window.location.reload();
+//        scrollImages(IMG_HEIGHT * currentImg, speed);
+//    }
+//    if (window.orientation === 90 || window.orientation === -90) {
+//        // $('html,body').scrollTop(3000);
+//        scrollImages(IMG_HEIGHT * currentImg, speed);
+//        $('html').animate({
+//            scrollTop: 3000
+//        }, 'slow')
+//        // window.location.reload();
+//    }
+//}, false);
